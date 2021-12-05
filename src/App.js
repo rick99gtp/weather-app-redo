@@ -9,11 +9,12 @@ import { useState, useEffect } from 'react';
 import { WeatherContext } from './WeatherContext';
 
 function App() {
-  const [location, setLocation] = useState({city: 'Round Rock', state: 'TX'});
+  const [location, setLocation] = useState({city: 'New York', state: 'NY'});
   const [weatherData, setWeatherData] = useState('');
   
   const fetchWeatherData = async () => {
-    const { data } = await axios.get(`https://api.weatherbit.io/v2.0/current?units=I&key=c74b01fb5d114516a2260d9f3fd04907&city=${location.city},${location.state}`);
+    const { data } = await
+    axios.get(`https://api.weatherbit.io/v2.0/current?units=I&key=c74b01fb5d114516a2260d9f3fd04907&city=${location.city},${location.state}`);
     console.log(data.data[0]);
     setWeatherData(data.data[0]);
   }
