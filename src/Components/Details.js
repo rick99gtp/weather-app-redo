@@ -1,5 +1,6 @@
 import '../Styles/Details.css';
 import Temperature from './Temperature';
+import DetailsInfo from './DetailsInfo';
 import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
 
@@ -11,13 +12,15 @@ const Details = () => {
             <div className='details-lowhigh__container'>
                 <div className='details-temp'>
                     <Temperature temp={weatherData ? weatherData.min_temp : '0'} />
-                    <p>LOW</p>
+                    <p className='low-temp'>LOW</p>
                 </div>
                 <div className='details-temp'>
-                    <Temperature temp={weatherData ? weatherData.max_temp : '0'}/>
-                    <p>HIGH</p>
+                    <Temperature temp={weatherData ? weatherData.max_temp : '0'} />
+                    <p className='high-temp'>HIGH</p>
                 </div>
             </div>
+
+            <DetailsInfo />
         </div>
     )
 }

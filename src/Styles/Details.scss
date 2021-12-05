@@ -1,13 +1,26 @@
 .details__container {
-    padding: 20px 50px;
+    padding: 20px 20px;
     background: rgba(255, 255, 255, .6);
 
     .details-lowhigh__container {
         display: flex;
         justify-content: space-around;
+        padding: 0 25px;
 
         .details-temp {
             text-align: center;
+
+            .low-temp {
+                color: #a4a4a4;
+            }
+
+            .high-temp {
+                color: #898989;
+            }
         }
     }
+
+    .detail-info__container {
+        padding: 20px 10px;
+    }    
 }

@@ -4,6 +4,7 @@ import UserOptions from './Components/UserOptions';
 import Details from './Components//Details';
 import Hourly from './Components/Hourly';
 import TenDay from './Components/TenDay';
+import MobileMenu from './Components/MobileMenu';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { WeatherContext } from './WeatherContext';
@@ -32,6 +33,7 @@ function App() {
         <Hourly />
         <TenDay />
       </WeatherContext.Provider>
+      <MobileMenu />
     </div>
   );
 }

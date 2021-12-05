@@ -1,5 +1,5 @@
 .details__container {
-  padding: 20px 50px;
+  padding: 20px 20px;
   background: rgba(255, 255, 255, 0.6);
 }
 
@@ -9,9 +9,22 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 25px;
 }
 
 .details__container .details-lowhigh__container .details-temp {
   text-align: center;
+}
+
+.details__container .details-lowhigh__container .details-temp .low-temp {
+  color: #a4a4a4;
+}
+
+.details__container .details-lowhigh__container .details-temp .high-temp {
+  color: #898989;
+}
+
+.details__container .detail-info__container {
+  padding: 20px 10px;
 }
 /*# sourceMappingURL=Details.css.map */

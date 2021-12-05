@@ -14,7 +14,7 @@ const CurrentWeather = ({location}) => {
             <p>RIGHT NOW</p>
             <div className='current-weather__details'>
                 <div className='current-weather__info'>
-                    <Temperature temp={weatherData.temp}/>
+                    <Temperature temp={weatherData ? weatherData.temp : '0'}/>
                     <p className='weather-type'>{weatherData ? weatherData.weather.description : ''}</p>
                 </div>
                 <WeatherIcon />
