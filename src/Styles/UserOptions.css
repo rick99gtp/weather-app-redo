@@ -12,7 +12,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 2px;
+  padding: 1px;
 }
 
 .user-options__container .user-options__choices .user-options__option {
@@ -26,6 +26,7 @@
   cursor: pointer;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  margin: 1px;
 }
 
 .user-options__container .user-options__choices .user-options__option:first-child {

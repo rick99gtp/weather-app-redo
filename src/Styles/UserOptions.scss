@@ -7,7 +7,7 @@
     .user-options__choices {
         display: flex;
         justify-content: space-evenly;
-        padding: 2px;
+        padding: 1px;
 
         .user-options__option {
             flex: 1;
@@ -17,6 +17,7 @@
             color: #007aff;
             cursor: pointer;
             transition: .3s ease-in-out;
+            margin: 1px;
 
             &:first-child {
                 border-radius: 5px 0 0 5px;
