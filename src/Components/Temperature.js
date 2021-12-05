@@ -1,9 +1,13 @@
 import '../Styles/Temperature.css';
+import { useContext } from 'react';
+import { WeatherContext } from '../WeatherContext';
 
 const Temperature = () => {
+    const weatherData = useContext(WeatherContext);
+
     return (
         <div className='temperature__container'>
-            60°<span>F</span>
+            {weatherData.temp}°<span>F</span>
         </div>
     )
 }

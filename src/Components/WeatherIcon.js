@@ -1,15 +1,21 @@
 import '../Styles/WeatherIcon.css';
-import { useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { WeatherContext } from '../WeatherContext';
-
 
 const WeatherIcon = () => {
     const weatherData = useContext(WeatherContext);
-    const icon = 'https://weatherbit.io/static/img/icons/';
+    const [ prefix ] = useState('https://weatherbit.io/static/img/icons/');
+    const [icon, setIcon] = useState('c02n');
+
+    useEffect(() => {
+        if(weatherData) {
+            setIcon(weatherData.weather.icon)
+        }
+    },[weatherData]);
 
     return (
         <div className='weather-icon__container'>
-            <img src={`${icon}${weatherData.weather.icon}.png`} alt="icon" />
+            <img src={`${prefix}${icon}.png`} alt="icon" />
         </div>
     )
 }

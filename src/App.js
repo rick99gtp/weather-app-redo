@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { WeatherContext } from './WeatherContext';
 
 function App() {
-  const [location, setLocation] = useState({city: 'Dallas', state: 'TX'});
+  const [location, setLocation] = useState({city: 'Round Rock', state: 'TX'});
   const [weatherData, setWeatherData] = useState('');
   
   const fetchWeatherData = async () => {
