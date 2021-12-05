@@ -1,6 +1,5 @@
 import '../Styles/DetailInfoItem.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWind, faTint,  } from '@fortawesome/free-solid-svg-icons';
 
 const DetailInfoItem = ({ title, icon, details }) => {
 

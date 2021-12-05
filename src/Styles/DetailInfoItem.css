@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+.details-info-item__container .details-info-icon {
+  text-align: center;
+}
+
 .details-info-item__container .details-info-specifics {
   display: -webkit-box;
   display: -ms-flexbox;
