@@ -1,14 +1,27 @@
 .mobile-menu__container {
   position: fixed;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   background: #f2f2f2;
-  padding: 20px 0;
+}
+
+.mobile-menu__container .mobile-menu__icon {
+  text-align: center;
+  padding: 10px;
+  color: #888;
+}
+
+.mobile-menu__container .mobile-menu__title {
+  font-size: .7rem;
+  margin-top: 2px;
+}
+
+.mobile-menu__container .active-menu {
+  color: #007aff;
+  font-weight: bold;
 }
 /*# sourceMappingURL=MobileMenu.css.map */

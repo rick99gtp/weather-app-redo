@@ -12,6 +12,8 @@ import { WeatherContext } from './WeatherContext';
 function App() {
   const [location, setLocation] = useState({ city: 'Celina', state: 'TX' });
   const [weatherData, setWeatherData] = useState('');
+  const [currentOption, setCurrentOption] = useState(0);
+  const [currentScreen, setCurrentScreen] = useState(0);
 
   const fetchWeatherData = async () => {
     const { data } = await
@@ -24,16 +26,24 @@ function App() {
     fetchWeatherData();
   }, []);
 
+  const changeCurrentOption = (opt) => {
+    setCurrentOption(opt);
+  };
+
+  const changeCurrentScreen = (choice) => {
+    setCurrentScreen(choice);
+  }
+
   return (
     <div className="App">
       <WeatherContext.Provider value={weatherData}>
         <CurrentWeather location={location}/>
-        <UserOptions />
+        <UserOptions option={currentOption} changeOption={changeCurrentOption} />
         <Details />
         <Hourly />
         <TenDay />
       </WeatherContext.Provider>
-      <MobileMenu />
+      <MobileMenu screen={currentScreen} changeScreen={changeCurrentScreen} />
     </div>
   );
 }
