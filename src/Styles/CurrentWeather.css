@@ -6,20 +6,17 @@
           box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
 }
 
-.current-weather__container p {
-  padding: 10px 0;
-}
-
 .current-weather__container .current-weather__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.current-weather__container .current-weather__details .current-weather__info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -10px 0;
 }
 
 .current-weather__container .current-weather__details .current-weather__info .weather-type {
@@ -27,9 +24,12 @@
   font-size: .9rem;
 }
 
-.current-weather__container .current-weather__details .current-weather__icon {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.current-weather__container .current-weather__location {
+  color: #a4a4a4;
+}
+
+.current-weather__container .current-weather__location .weather-location {
+  display: inline-block;
+  padding: 0 5px;
 }
 /*# sourceMappingURL=CurrentWeather.css.map */

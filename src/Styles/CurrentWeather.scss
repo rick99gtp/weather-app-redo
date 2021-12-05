@@ -4,24 +4,27 @@
     padding: 10px 25px;
     box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
 
-    p {
-        padding: 10px 0;
-    }
-
     .current-weather__details {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: -10px 0;
 
         .current-weather__info {
-            flex: 1;
 
             .weather-type {
                 padding-top: 0;
                 font-size: .9rem;
             }
         }
+    }
 
-        .current-weather__icon {
-            flex: 1;
+    .current-weather__location {
+        color: #a4a4a4;
+
+        .weather-location {
+            display: inline-block;
+            padding: 0 5px;
         }
     }
 }
