@@ -7,7 +7,7 @@ const Temperature = () => {
 
     return (
         <div className='temperature__container'>
-            {weatherData.temp}°<span>F</span>
+            {weatherData ? weatherData.temp : '0'}°<span>F</span>
         </div>
     )
 }

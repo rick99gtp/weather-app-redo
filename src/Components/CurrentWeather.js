@@ -15,13 +15,13 @@ const CurrentWeather = () => {
             <div className='current-weather__details'>
                 <div className='current-weather__info'>
                     <Temperature />
-                    <p className='weather-type'>Light Thunderstorms</p>
+                    <p className='weather-type'>{weatherData ? weatherData.weather.description : ''}</p>
                 </div>
                 <WeatherIcon />
             </div>
             <div className='current-weather__location'>
                 <FontAwesomeIcon icon={faLocationArrow} />
-                <p className='weather-location'>{weatherData.city_name},{weatherData.state_code}</p>
+                <p className='weather-location'>{weatherData ? weatherData.city_name : 'city'}, {weatherData ? weatherData.state_code : 'state'}</p>
             </div>
         </div>
     )
