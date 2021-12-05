@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=Details.css.map */
+.details__container {
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.details__container .details-lowhigh__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.details__container .details-lowhigh__container .details-temp {
+  text-align: center;
+}
+/*# sourceMappingURL=Details.css.map */

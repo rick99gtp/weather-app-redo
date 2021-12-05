@@ -4,6 +4,7 @@
   padding: 10px 25px;
   -webkit-box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
           box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
+  margin: 20px;
 }
 
 .current-weather__container .current-weather__details {

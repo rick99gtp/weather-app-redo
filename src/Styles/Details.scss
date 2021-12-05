@@ -1,3 +1,13 @@
 .details__container {
-    
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, .6);
+
+    .details-lowhigh__container {
+        display: flex;
+        justify-content: space-around;
+
+        .details-temp {
+            text-align: center;
+        }
+    }
 }

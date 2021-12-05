@@ -6,7 +6,7 @@ import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
 
-const CurrentWeather = () => {
+const CurrentWeather = ({location}) => {
     const weatherData = useContext(WeatherContext);
 
     return (
@@ -14,14 +14,14 @@ const CurrentWeather = () => {
             <p>RIGHT NOW</p>
             <div className='current-weather__details'>
                 <div className='current-weather__info'>
-                    <Temperature />
+                    <Temperature temp={weatherData.temp}/>
                     <p className='weather-type'>{weatherData ? weatherData.weather.description : ''}</p>
                 </div>
                 <WeatherIcon />
             </div>
             <div className='current-weather__location'>
                 <FontAwesomeIcon icon={faLocationArrow} />
-                <p className='weather-location'>{weatherData ? weatherData.city_name : 'city'}, {weatherData ? weatherData.state_code : 'state'}</p>
+                <p className='weather-location'>{location.city}, {location.state}</p>
             </div>
         </div>
     )
