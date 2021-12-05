@@ -1,9 +1,6 @@
 import './Styles/App.css';
 import CurrentWeather from './Components/CurrentWeather';
 import UserOptions from './Components/UserOptions';
-import Details from './Components/Details';
-import Hourly from './Components/Hourly';
-import TenDay from './Components/TenDay';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { WeatherContext } from './WeatherContext';
@@ -28,9 +25,6 @@ function App() {
       <WeatherContext.Provider value={weatherData}>
         <CurrentWeather />
         <UserOptions />
-        <Details />
-        <Hourly />
-        <TenDay />
       </WeatherContext.Provider>
     </div>
   );
