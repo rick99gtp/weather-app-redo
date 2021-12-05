@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     background: url('../assets/app-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }

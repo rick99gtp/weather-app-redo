@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=Temperature.css.map */
+.temperature__container {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.temperature__container span {
+  font-size: 1.35rem;
+}
+/*# sourceMappingURL=Temperature.css.map */
