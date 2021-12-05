@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=WeatherIcon.css.map */
+.weather-icon__container img {
+  width: 100px;
+}
+/*# sourceMappingURL=WeatherIcon.css.map */

@@ -16,7 +16,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -10px 0;
 }
 
 .current-weather__container .current-weather__details .current-weather__info .weather-type {
@@ -26,6 +25,7 @@
 
 .current-weather__container .current-weather__location {
   color: #a4a4a4;
+  margin-top: 10px;
 }
 
 .current-weather__container .current-weather__location .weather-location {

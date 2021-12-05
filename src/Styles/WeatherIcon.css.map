@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AACI,wBADoB,CACpB,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;CACf",
     "sources": [
         "WeatherIcon.scss"
     ],
