@@ -3,5 +3,6 @@ body {
   background: url("../assets/app-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 10px;
 }
 /*# sourceMappingURL=App.css.map */
