@@ -1,4 +1,5 @@
 import '../Styles/TenDay.css';
+import React from 'react';
 
 const TenDay = () => {
     return (
@@ -8,4 +9,4 @@ const TenDay = () => {
     )
 }
 
-export default TenDay;
+export default React.memo(TenDay);

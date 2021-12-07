@@ -1,6 +1,7 @@
 import '../Styles/Details.css';
 import Temperature from './Temperature';
 import DetailsInfo from './DetailsInfo';
+import React from 'react';
 import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
 
@@ -21,8 +22,9 @@ const Details = () => {
             </div>
 
             <DetailsInfo />
+            
         </div>
     )
 }
 
-export default Details;
+export default React.memo(Details);

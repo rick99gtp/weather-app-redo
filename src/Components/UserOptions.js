@@ -1,3 +1,4 @@
+import React from 'react';
 import '../Styles/UserOptions.css';
 
 const UserOptions = ({option, changeOption}) => {
@@ -13,4 +14,4 @@ const UserOptions = ({option, changeOption}) => {
     )
 }
 
-export default UserOptions;
+export default React.memo(UserOptions);

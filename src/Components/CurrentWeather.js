@@ -3,6 +3,7 @@ import Temperature from './Temperature';
 import WeatherIcon from './WeatherIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
 
@@ -27,4 +28,4 @@ const CurrentWeather = ({location}) => {
     )
 }
 
-export default CurrentWeather;
+export default React.memo(CurrentWeather);

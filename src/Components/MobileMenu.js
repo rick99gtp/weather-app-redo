@@ -1,4 +1,5 @@
 import '../Styles/MobileMenu.css';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faListUl, faPlus, faThermometerThreeQuarters } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,4 +26,4 @@ const MobileMenu = ({ screen, changeScreen }) => {
     )
 }
 
-export default MobileMenu;
+export default React.memo(MobileMenu);
