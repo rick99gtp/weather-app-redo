@@ -19,18 +19,17 @@ const TenDay = () => {
             <div className='ten-day__row'>
                 <div></div>
                 <div></div>
-                <div>LOW</div>
-                <div>HIGH</div>
+                <div className='col-b'>LOW</div>
+                <div className='col-b'>HIGH</div>
             </div>
 
             {data.data.map((el, idx) => {
-                console.log(el.datetime);
                 return (
                     <div className='ten-day__row' key={el.datetime}>
-                        <div className='col1'>{idx === 0 ? 'Today' : getDay(el.datetime)}</div>
-                        <div className='col2'><img src={`${prefix}${el.weather.icon}.png`} alt="daily-icon"/></div>
-                        <div className='col3'>{Math.floor(el.low_temp)}</div>
-                        <div className='col4'>{Math.floor(el.high_temp)}</div>
+                        <div className='col-a'>{idx === 0 ? 'Today' : getDay(el.datetime)}</div>
+                        <div className='col-a col-icon'><img src={`${prefix}${el.weather.icon}.png`} alt="daily-icon"/></div>
+                        <div className='col-b'>{Math.floor(el.low_temp)}</div>
+                        <div className='col-b'>{Math.floor(el.high_temp)}</div>
                     </div>
                 )
             })}
