@@ -6,17 +6,17 @@ import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
 
 const Details = () => {
-    const weatherData = useContext(WeatherContext);
+    const data = useContext(WeatherContext);
 
     return (
         <div className='details__container'>
             <div className='details-lowhigh__container'>
                 <div className='details-temp'>
-                    <Temperature temp={weatherData ? weatherData.min_temp : '0'} />
+                    <Temperature temp={data.data[0].min_temp} />
                     <p className='low-temp'>LOW</p>
                 </div>
                 <div className='details-temp'>
-                    <Temperature temp={weatherData ? weatherData.max_temp : '0'} />
+                    <Temperature temp={data.data[0].max_temp} />
                     <p className='high-temp'>HIGH</p>
                 </div>
             </div>

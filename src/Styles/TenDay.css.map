@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,wBAAuB;CAM5C;;AARD,AAII,mBAJe,CAIf,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,eAAe;CACzC",
     "sources": [
         "TenDay.scss"
     ],

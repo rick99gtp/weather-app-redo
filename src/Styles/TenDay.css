@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=TenDay.css.map */
+.ten-day__container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.ten-day__container .ten-day__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 4fr 2fr 2fr;
+      grid-template-columns: 4fr 4fr 2fr 2fr;
+}
+/*# sourceMappingURL=TenDay.css.map */

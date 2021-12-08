@@ -1,19 +1,19 @@
 import '../Styles/DetailsInfo.css';
 import DetailInfoItem from './DetailInfoItem';
+import { faWind, faTint, faEye, faCompressAlt, faThermometerEmpty } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { WeatherContext } from '../WeatherContext';
-import { faWind, faTint, faEye, faCompressAlt, faThermometerEmpty } from '@fortawesome/free-solid-svg-icons';
 
 const DetailsInfo = () => {
-    const weatherData = useContext(WeatherContext);
+    const data = useContext(WeatherContext);
 
     return (
         <div className='details-info__container'>
-            <DetailInfoItem icon={faWind} title="WIND" details={weatherData ? `${weatherData.wind_cdir} ${Math.floor(weatherData.wind_spd)} MPH` : ''}/>
-            <DetailInfoItem icon={faTint} title="HUMIDITY" details={weatherData ? `${weatherData.rh}%` : ''} />
-            <DetailInfoItem icon={faThermometerEmpty} title="DEW POINT" details={weatherData ? `${Math.floor(weatherData.dewpt)}°` : ''} />
-            <DetailInfoItem icon={faCompressAlt} title="PRESSURE" details={weatherData ? `${(weatherData.pres * 0.0295301).toFixed(2)} in` : ''} />
-            <DetailInfoItem icon={faEye} title="VISIBILITY" details={weatherData ? `${weatherData.vis} mi` : ''} />
+            <DetailInfoItem icon={faWind} title="WIND" details={`${data.data[0].wind_cdir} ${Math.floor(data.data[0].wind_spd)} MPH`} />
+            <DetailInfoItem icon={faTint} title="HUMIDITY" details={`${data.data[0].rh}%`} />
+            <DetailInfoItem icon={faThermometerEmpty} title="DEW POINT" details={`${Math.floor(data.data[0].dewpt)}°`} />
+            <DetailInfoItem icon={faCompressAlt} title="PRESSURE" details={`${(data.data[0].pres * 0.0295301).toFixed(2)} in`} />
+            <DetailInfoItem icon={faEye} title="VISIBILITY" details={`${data.data[0].vis} mi`} />
         </div>
     )
 }
