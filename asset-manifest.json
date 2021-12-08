@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weather-app-redo/static/css/main.2daaaf03.chunk.css",
-    "main.js": "/weather-app-redo/static/js/main.f6c50fe2.chunk.js",
-    "main.js.map": "/weather-app-redo/static/js/main.f6c50fe2.chunk.js.map",
+    "main.js": "/weather-app-redo/static/js/main.1dae6962.chunk.js",
+    "main.js.map": "/weather-app-redo/static/js/main.1dae6962.chunk.js.map",
     "runtime-main.js": "/weather-app-redo/static/js/runtime-main.bce03f56.js",
     "runtime-main.js.map": "/weather-app-redo/static/js/runtime-main.bce03f56.js.map",
     "static/js/2.ede74c8b.chunk.js": "/weather-app-redo/static/js/2.ede74c8b.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.bce03f56.js",
     "static/js/2.ede74c8b.chunk.js",
     "static/css/main.2daaaf03.chunk.css",
-    "static/js/main.f6c50fe2.chunk.js"
+    "static/js/main.1dae6962.chunk.js"
   ]
 }
