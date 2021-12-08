@@ -10,7 +10,7 @@ import { WeatherContext } from './WeatherContext';
 function App() {
   const [location, setLocation] = useState({ city: 'Celina', state: 'TX' });
   const [weatherData, setWeatherData] = useState('');
-  const [currentOption, setCurrentOption] = useState(2);
+  const [currentOption, setCurrentOption] = useState(0);
   const [currentScreen, setCurrentScreen] = useState(0);
   const [dataReady, setDataReady] = useState(false);
 
