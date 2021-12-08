@@ -24,4 +24,11 @@
   color: #007aff;
   font-weight: bold;
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=MobileMenu.css.map */

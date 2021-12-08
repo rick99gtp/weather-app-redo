@@ -12,3 +12,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background-attachment: fixed;
 }
+
+@media screen and (min-width: 768px) {
+    .App {
+        width: 25%;
+        margin: 0 auto;
+    }
+}
