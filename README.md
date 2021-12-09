@@ -14,7 +14,7 @@ Here I implemented useContext so I could get rid of prop-drilling. Now, child co
 
 ### FontAwesome React Icons
 
-Previously, 
+Using these icons for the UI. As for the weather icons (cloudy, rainy, etc.), before, I was storing every image of the icons in the app. Now, I just refer to weatherbit.io's website for the icon.
 
 ### `npm run eject`
 
