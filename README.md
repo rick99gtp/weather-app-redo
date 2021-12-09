@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Weather App Redo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Now that I'm more experienced using React, I decided I would go back and make changes/improvements to my weather app. There is still much work to do, however future improvements are in the works!
 
-## Available Scripts
+## 
 
 In the project directory, you can run:
 
