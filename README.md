@@ -2,30 +2,19 @@
 
 Now that I'm more experienced using React, I decided I would go back and make changes/improvements to my weather app. There is still much work to do, however future improvements are in the works!
 
-![Alt text](https://www.rickbeyer.dev/images/screenshots/weather-app.jpg "Optional title")
+![Alt text](https://www.rickbeyer.dev/images/screenshots/weather-app.jpg "Weather App")
 
-### `npm start`
+### Using Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Previously, I was using fetch to call the API. WITHOUT async/await. Huge mistake. It explains why sometimes the data wouldn't show up.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### useContext
 
-### `npm test`
+Here I implemented useContext so I could get rid of prop-drilling. Now, child components can access the context data without parent components re-rendering.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### FontAwesome React Icons
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Previously, 
 
 ### `npm run eject`
 
