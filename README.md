@@ -2,7 +2,7 @@
 
 Now that I'm more experienced using React, I decided I would go back and make changes/improvements to my weather app. There is still much work to do, however future improvements are in the works!
 
-https://www.rickbeyer.dev/images/screenshots/weather-app.jpg
+![Alt text](https://www.rickbeyer.dev/images/screenshots/weather-app.jpg "Optional title")
 
 ### `npm start`
 
