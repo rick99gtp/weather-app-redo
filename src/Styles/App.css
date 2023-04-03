@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,14 +9,26 @@ body {
   background: url("../assets/app-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-attachment: fixed;
 }
 
-@media screen and (min-width: 768px) {
-  .App {
-    width: 25%;
-    margin: 0 auto;
-  }
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-/*# sourceMappingURL=App.css.map */
+.App .loading-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App .loading-container .loading-weather-data {
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=App.css.map */

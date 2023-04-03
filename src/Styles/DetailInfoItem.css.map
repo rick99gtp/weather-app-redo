@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,6BAA6B,CAAC;EAC1B,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,OAAO,EAAE,MAAM;EACf,aAAa,EAAE,cAAc;EAC7B,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;CAYpB;;AAlBD,AAQI,6BARyB,CAQzB,kBAAkB,CAAC;EACf,UAAU,EAAE,MAAM;CACrB;;AAVL,AAYI,6BAZyB,CAYzB,uBAAuB,CAAC;EACpB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,MAAM;CAClB",
-    "sources": [
-        "DetailInfoItem.scss"
-    ],
-    "names": [],
-    "file": "DetailInfoItem.css"
-}
+{"version":3,"sources":["DetailInfoItem.scss","DetailInfoItem.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,eAAA;EACA,6BAAA;EACA,iBAAA;EACA,iBAAA;ACCJ;ADCI;EACI,kBAAA;ACCR;ADEI;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,eAAA;ACAR","file":"DetailInfoItem.css"}

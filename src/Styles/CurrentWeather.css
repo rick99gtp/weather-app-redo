@@ -2,35 +2,22 @@
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.6);
   padding: 10px 25px;
-  -webkit-box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
-          box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.75);
   margin: 20px;
 }
-
 .current-weather__container .current-weather__details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .current-weather__container .current-weather__details .current-weather__info .weather-type {
   padding-top: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
 .current-weather__container .current-weather__location {
   color: #a4a4a4;
   margin-top: 10px;
 }
-
 .current-weather__container .current-weather__location .weather-location {
   display: inline-block;
   padding: 0 5px;
-}
-/*# sourceMappingURL=CurrentWeather.css.map */
+}/*# sourceMappingURL=CurrentWeather.css.map */

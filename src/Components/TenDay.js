@@ -23,7 +23,7 @@ const TenDay = () => {
                 <div className='col-b'>HIGH</div>
             </div>
 
-            {data.data.map((el, idx) => {
+            {data.data.data.map((el, idx) => {
                 return (
                     <div className='ten-day__row' key={el.datetime}>
                         <div className='col-a'>{idx === 0 ? 'Today' : getDay(el.datetime)}</div>

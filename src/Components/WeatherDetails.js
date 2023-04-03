@@ -7,11 +7,11 @@ import { WeatherContext } from '../WeatherContext';
 const WeatherDetails = ({currentOption}) => {
     const data = useContext(WeatherContext);
     return (
-        <div>
+        <>
             {currentOption === 0 ? <Details /> : null}
             <Hourly />
             {currentOption === 2 ? <TenDay /> : null}
-        </div>
+        </>
     )
 }
 

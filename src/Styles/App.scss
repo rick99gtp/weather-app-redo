@@ -13,9 +13,24 @@ body {
     background-attachment: fixed;
 }
 
-@media screen and (min-width: 768px) {
-    .App {
-        width: 25%;
-        margin: 0 auto;
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .loading-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loading-weather-data {
+            border: 1px solid #fff;
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            background-color: rgba(255, 255, 255, .25);
+            color: #fff;
+            font-size: 1.25rem;
+        }
     }
 }

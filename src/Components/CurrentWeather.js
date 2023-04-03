@@ -14,10 +14,10 @@ const CurrentWeather = ({location}) => {
             <p>RIGHT NOW</p>
             <div className='current-weather__details'>
                 <div className='current-weather__info'>
-                    <Temperature temp={data.data[0].temp}/>
-                    <p className='weather-type'>{data.data[0].weather.description}</p>
+                    <Temperature temp={data.data.data[0].temp}/>
+                    <p className='weather-type'>{data.data.data[0].weather.description}</p>
                 </div>
-                <WeatherIcon icon={data.data[0].weather.icon} />
+                <WeatherIcon icon={data.data.data[0].weather.icon} />
             </div>
             <div className='current-weather__location'>
                 <FontAwesomeIcon icon={faLocationArrow} />
