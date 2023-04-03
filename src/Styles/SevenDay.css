@@ -5,6 +5,7 @@
   overflow-y: auto;
   display: grid;
   grid-template-rows: 1rem repeat(7, 1fr);
+  margin-bottom: 5rem;
 }
 .seven-day__container .seven-day__row {
   display: grid;

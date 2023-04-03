@@ -1,4 +1,6 @@
 .mobile-menu__container {
+  position: fixed;
+  bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
@@ -19,11 +21,4 @@
 .mobile-menu__container .active-menu {
   color: #007aff;
   font-weight: bold;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu__container {
-    width: 25%;
-    margin: 0 auto;
-  }
 }/*# sourceMappingURL=MobileMenu.css.map */
