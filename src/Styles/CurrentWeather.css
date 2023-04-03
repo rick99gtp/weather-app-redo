@@ -1,8 +1,8 @@
 .current-weather__container {
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px 25px;
-  margin: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  margin: 20px 20px 0;
 }
 .current-weather__container .current-weather__details {
   display: flex;
@@ -14,7 +14,7 @@
   font-size: 0.9rem;
 }
 .current-weather__container .current-weather__location {
-  color: #a4a4a4;
+  color: #838383;
   margin-top: 10px;
 }
 .current-weather__container .current-weather__location .weather-location {

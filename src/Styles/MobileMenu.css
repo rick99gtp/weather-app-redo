@@ -9,6 +9,9 @@
   padding: 10px;
   color: #888;
 }
+.mobile-menu__container .mobile-menu__icon.disabled {
+  color: #ccc;
+}
 .mobile-menu__container .mobile-menu__title {
   font-size: 0.7rem;
   margin-top: 2px;

@@ -2,8 +2,12 @@
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -2px;
+    display: flex;
+    position: relative;
 
-    span {
-        font-size: 1.35rem;
+    /* Degrees is positioned absolutely, so that the temperature will remain centered horizontally */
+    .degrees {
+        position: absolute;
+        right: -1rem;
     }
 }

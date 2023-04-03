@@ -10,7 +10,7 @@ const MobileMenu = ({ screen, changeScreen }) => {
                 <FontAwesomeIcon icon={ faThermometerThreeQuarters } size="2x"/>
                 <p className='mobile-menu__title'>Forecast</p>
             </div>
-            <div className={`mobile-menu__icon ${screen === 1 ? 'active-menu' : ''}`} onClick={() => changeScreen(1)} >
+            <div className={`mobile-menu__icon disabled ${screen === 1 ? 'active-menu' : ''}`} onClick={() => changeScreen(1)} >
                 <FontAwesomeIcon icon={ faGlobe } size="2x"/>
                 <p className='mobile-menu__title'>Map</p>
             </div>

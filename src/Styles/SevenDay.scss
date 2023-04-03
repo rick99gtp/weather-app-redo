@@ -1,13 +1,16 @@
-.ten-day__container {
+.seven-day__container {
+    flex: 1;
     padding: 20px;
     background-color: rgba(255, 255, 255, .6);
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: 1rem repeat(7, 1fr);
 
-    .ten-day__row {
+    .seven-day__row {
         display: grid;
         grid-template-columns: 4fr 4fr 2fr 2fr;
 
         .col-a {
-            padding: 5px;
             display: flex;
             align-items: center;
         }

@@ -2,7 +2,11 @@
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: -2px;
+  display: flex;
+  position: relative;
+  /* Degrees is positioned absolutely, so that the temperature will remain centered horizontally */
 }
-.temperature__container span {
-  font-size: 1.35rem;
+.temperature__container .degrees {
+  position: absolute;
+  right: -1rem;
 }/*# sourceMappingURL=Temperature.css.map */
