@@ -16,64 +16,9 @@ function App() {
 
   /* Request the weather data from the location and state */
   const fetchWeatherData = async () => {
-    // const data = await axios.get(
-    //   `https://api.weatherbit.io/v2.0/forecast/daily?units=I&days=10&key=${process.env.REACT_APP_API_KEY}&city=${location.city},${location.state}`
-    // );
-    /* Test data for Current Weather 'Details' */
-    const data = {
-      data: {
-        city_name: "Frisco",
-        country_code: "US",
-        data: [
-          { app_max_temp: 91.6,
-            app_min_temp: 62.2,
-            clouds: 13,
-            clouds_hi: 7,
-            clouds_mid: 4,
-            datetime: "2023-04-03",
-            dewpt: 61.8,
-            high_temp: 93.9,
-            low_temp: 71.2,
-            max_dhi: null,
-            max_temp: 93.9,
-            min_temp: 62.2,
-            moon_phase: 0.970267,
-            moon_phase_lunation: 0.45,
-            moonrise_ts: 1680561651,
-            moonset_ts: 1680521816,
-            ozone: 276.4,
-            pop: 0,
-            precip: 0,
-            pres: 979.8,
-            rh: 63,
-            slp: 1003.6,
-            snow: 0,
-            snow_depth: 0,
-            sunrise_ts: 1680523993,
-            sunset_ts: 1680569390,
-            temp: 77,
-            ts: 1680505260,
-            uv: 8.9,
-            valid_dateE: "2023-04-03",
-            vis: 8.8,
-            weather: {
-              code: 801,
-              description: "Few clouds",
-              icon: "c02d"
-            },
-            wind_cdir: "S",
-            wind_cdir_full: "south",
-            wind_dir: 190,
-            wind_gust_spd: 23.9,
-            wind_spd: 15
-          }
-        ],
-        lat: "33.15067",
-        lon: "-96.82361",
-        state_code: "TX",
-        timezone: "America/Chicago"
-      }
-    };
+    const data = await axios.get(
+      `https://api.weatherbit.io/v2.0/forecast/daily?units=I&days=10&key=${process.env.REACT_APP_API_KEY}&city=${location.city},${location.state}`
+    );
     setWeatherData(data);
   }
 
