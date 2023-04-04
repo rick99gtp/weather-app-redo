@@ -1,6 +1,6 @@
 # Weather App Redo
 
-This is a weather app written with React using useState, useEffect, useCallback, useContext and memo.
+This is a weather app written with React using useState, useEffect, useCallback, useContext and memo. It is defaulted to Frisco, TX. I will add functionality to change the location at a later date.
 
 ![Alt text](https://www.rickbeyer.dev/images/screenshots/weather-app.jpg "Weather App")
 
