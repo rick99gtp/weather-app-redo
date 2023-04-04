@@ -2,8 +2,9 @@
   flex: 1;
   padding: 20px;
   background: rgba(255, 255, 255, 0.6);
-  margin-bottom: 5rem;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .details__container .details-lowhigh__container {
   display: flex;
@@ -15,6 +16,8 @@
 .details__container .details-lowhigh__container .details-temp .low-temp, .details__container .details-lowhigh__container .details-temp .high-temp {
   color: #898989;
 }
-.details__container .detail-info__container {
+.details__container .details-info__container {
   padding: 20px 10px;
+  flex: 1;
+  overflow: auto;
 }/*# sourceMappingURL=Details.css.map */

@@ -2,8 +2,9 @@
     flex: 1;
     padding: 20px;
     background: rgba(255, 255, 255, .6);
-    margin-bottom: 5rem;
-    overflow-y: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     .details-lowhigh__container {
         display: flex;
@@ -18,7 +19,9 @@
         }
     }
 
-    .detail-info__container {
+    .details-info__container {
         padding: 20px 10px;
+        flex: 1;
+        overflow: auto;
     }    
 }

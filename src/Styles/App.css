@@ -5,7 +5,6 @@
 }
 
 body {
-  height: 100vh;
   background: url("../assets/app-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,9 +13,9 @@ body {
 }
 
 .App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .App .loading-container {
   flex: 1;
@@ -31,4 +30,12 @@ body {
   background-color: rgba(255, 255, 255, 0.25);
   color: #fff;
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 480px) {
+  .App {
+    width: 480px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=App.css.map */
